@@ -1,0 +1,39 @@
+@using Web.Models
+@model HomeViewModel
+
+@{
+    ViewBag.Title = "VSO Integration";
+}
+
+<h1>Most Recent 10 Changesets</h1>
+
+<table class="table table-striped table-hover">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Created Date</th>
+        <th>Comment</th>
+        <th>Author</th>
+    </tr>
+    </thead>
+    <tbody>
+        @foreach (var changeset in Model.ChangesetResult.value)
+        {
+            <tr>
+                <td><!-- Id -->
+                    <a href="@changeset.url">@changeset.changesetId</a>
+                </td>
+                <td><!-- Created Date -->
+                    @changeset.createdDate.ToShortDateString() @changeset.createdDate.ToShortTimeString()
+                </td>
+                <td>
+                    @changeset.comment
+                </td>
+                <td><!-- Author -->
+                    <img src="@changeset.checkedInBy.imageUrl" alt="@changeset.checkedInBy.displayName" class="img-rounded" width="26" height="26" />
+                    @changeset.checkedInBy.displayName
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

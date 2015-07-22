@@ -1,0 +1,5 @@
+C:\TFS\VSOIntegration\Trunk\Security\bin\Debug\Security.dll
+C:\TFS\VSOIntegration\Trunk\Security\bin\Debug\Security.pdb
+C:\TFS\VSOIntegration\Trunk\Security\obj\Debug\Security.csprojResolveAssemblyReference.cache
+C:\TFS\VSOIntegration\Trunk\Security\obj\Debug\Security.dll
+C:\TFS\VSOIntegration\Trunk\Security\obj\Debug\Security.pdb
