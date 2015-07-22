@@ -1,0 +1,2 @@
+# VSOIntegratiom
+The VSO Integration Demo is an MVC/WebAPI application highlighting several capabilities of Visual Studio Online as of July 17, 2015. You can see the actual website in action at http://vsointegration.azurewebsites.net. This web app is meant to highlight several integration and customization points of VSO: VSO REST API, Automated Build and Publish to Azure (http://vsointegration.azurewebsites.net), and Service Hooks / Web Hook
